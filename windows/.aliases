@@ -1,0 +1,29 @@
+# Docker management
+alias dc="docker-compose -f ../docker-compose.yml"
+alias up="dc up -d"
+alias stop="dc stop"
+alias down="dc down"
+alias dockerlog="dc logs --tail=100 -f"
+
+# Binary
+alias php="dc exec php php"
+alias npm="dc exec npm npm"
+alias composer="dc exec composer composer"
+
+# Command
+alias sshdocker="dc exec php sh"
+alias art="php artisan"
+alias pu="php ./vendor/bin/phpunit"
+alias pf="pu --filter"
+alias laralog="dc exec php tail -fn 100 storage/logs/laravel.log"
+alias cda="composer dump-autoload -o"
+
+# Git
+alias gs='git status'
+alias gl='git log'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gcom='git checkout master'
+alias gaa='git add .'
+alias gc='git commit -m '
+alias gp='git push'
+alias nah='git reset --hard && git clean -df'
