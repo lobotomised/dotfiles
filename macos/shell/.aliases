@@ -1,0 +1,43 @@
+alias lla='ls -al'
+alias code='cd ~/code'
+
+alias artisan='php artisan'
+alias art='php artisan'
+alias a='php artisan'
+alias p='./vendor/bin/phpunit'
+alias pf='p --filter'
+alias watch='npm run watch'
+alias phpstan='./vendor/bin/phpstan analyse'
+alias lo='tail -fn 0 storage/logs/laravel.log'
+alias tinker='php artisan tinker'
+
+alias mfs='php artisan migrate:fresh --seed'
+alias cda='composer dump-autoload'
+
+alias switch-php80="brew unlink php@7.4 && brew link --overwrite --force php"
+alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
+
+alias gs='git status'
+alias gl='git log'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gcom='git checkout master'
+alias gcod='git checkout develop'
+alias gaa='git add .'
+alias gc='git commit -m '
+alias gp='git push'
+alias nah='git reset --hard && git clean -df'
+
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
+# IP Address
+alias ip="curl https://diagnostic.opendns.com/myip ; echo"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+alias l='ls -alF'
+
+
+
