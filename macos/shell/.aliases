@@ -10,6 +10,9 @@ alias watch='npm run watch'
 alias phpstan='./vendor/bin/phpstan analyse'
 alias lo='tail -fn 0 storage/logs/laravel.log'
 alias tinker='php artisan tinker'
+alias crawl="php artisan crawl --ignore-robots --ignore-external-links --fail-on-error"                                                                                                                                   
+alias mfs='php artisan migrate:fresh --seed'                                                                                                                                                                              
+alias cda='composer dump-autoload'
 
 alias mfs='php artisan migrate:fresh --seed'
 alias cda='composer dump-autoload'
@@ -38,6 +41,3 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 alias l='ls -alF'
-
-
-
